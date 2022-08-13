@@ -1,0 +1,113 @@
+<html lang="en" dir="itr">
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/e4e2095070.js" crossorigin="anonymous"></script>
+    <title>Kantor Urusan Internasional dan Kerja Sama UNMUHA</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="logo1.png">
+</head>
+<body style="   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Unmuha2.jpg);
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;">
+            <div class="menu-bar">
+                <a href="index.html"><img src="logo1.png" class="logo"></a>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-address-card"></i>Profile</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Sejarah</a></li>
+                                <li><a href="file:///C:/Users/USER%20PC/Documents/GitHub/kuiunmuha.github.io/Index%20Sejarah%20Lokal/index%20sejarah%20lokal.html">Sejarah Lokal</a></li>
+                                <li><a href="#">Kegiatan</a></li>
+                                <li><a href="#">Visi dan Misi</a></li>
+                            </ul>
+                        </div>
+                    <li><a href="#"><i class="fa-solid fa-circle-user"></i>About Us</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="file:///C:/Users/USER%20PC/Documents/GitHub/kuiunmuha.github.io/profilecard/eksperiment.html">About Kui & Kerjasama</a></li>
+                            <li><a href="https://unmuha.ac.id/" target="_blank" rel="noopener">About Campus</a></li>
+                            <li><a href="#">Kegiatan</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#"><i class="fa-solid fa-folder-open"></i>Dokumen Kerjasama</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">Lokal</a></li>
+                            <li><a href="#">Nasional</a></li>
+                            <li><a href="#">Internasional</a></li>
+                        </ul>
+                    <li><a href="#"><i class="fa-solid fa-handshake"></i>Kegiatan Kerjasama</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="mailto:kui.kerjasama@unmuha.ac.id">Gmail</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                </ul>
+            </div>
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                        <!--radio buttons start-->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!--radio buttons end-->
+                        <!--slide images start-->
+                        <div class="slide first">
+                            <img src="unmuha slider.jpeg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IISMA Program.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="Register now.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="meeting.jpg" alt="">
+                        </div>
+                        <!--slide images end-->
+                        <!--automatic navigation start-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                        <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+                <!--image slider end-->
+                <div class="content">
+                    <h1>KANTOR URUSAN INTERNASIONAL & KERJASAMA UNMUHA </h1>
+                    <P><b>Official Website Kantor Urusan Internasional Universitas Muhammadiyah Aceh</b><br><br>Welcome to Official Website KUI UNMUHA<br>Kantor Urusan Internasional Universitas Muhammadiyah Aceh <br> memiliki peranan penting dalam memperkuat hubungan Internasional<br> antar universitas di berbagai dunia yang menjalin MoU dengan Universitas Muhammadiyah Aceh.</P>
+                </div>
+                <!-- mulai lanjut coding disini -->
+        </div>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter> 4){
+                counter = 1;
+
+            }
+        }, 5000);
+        </script>
+</body>
+</html>

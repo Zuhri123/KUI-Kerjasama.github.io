@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items:center; 
+    justify-content: space-between;
+}
+/* .menu-bar{
+    width: 90%;
+    padding: 15px;
+    text-align: center;
+} */
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    padding-top: 0px;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar li:hover{
+    background: green;
+    border-radius: 3px;
+}
+i{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #05dd22;
+
+}
+.logo{
+    width: 180px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    float: left;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Unmuha2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.content{
+    width: 100%;
+    transform: translateY(-70%);
+    text-align: center;
+    background: green;
+    color: white;
+    margin-top: 60px;
+    padding-bottom: 57px;
+    padding-top: 50px;
+}
+.content p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: white ;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.content a{
+    text-decoration: none;
+    color: white;
+}
+/* .row{
+    display: flex;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+} */
+.card{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.75);
+    transition: 0.5s;
+    margin-top: 25%;
+    margin-bottom: 30%;
+    margin-left: 38%;
+}
+.card:hover{
+    height: 450px;
+}
+.imgBx{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover .imgBx{
+    width: 250px;
+    height: 250px;
+}
+.card .content-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content-2 .details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+.card:hover .content-2 .details{
+    transform: translateY(0px);
+}
+.card .content-2 .details h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+    text-align: center;
+}
+.card .content-2 .details h2 span{
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.card .content-2 .details .data{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.card .content-2 .details .data span{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.card .content-2 .details .actionBtn{
+    display: flex;
+    justify-content: space-between;
+    /*gap: 20px;*/
+}
+.card .content-2 .details .actionBtn button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff5f5f;
+    color: white;
+    cursor: pointer;
+}
+.card .content-2 .details .actionBtn button:nth-child(2){
+    border: 1px solid #999;
+    color: #999;
+    background: white;
+}
